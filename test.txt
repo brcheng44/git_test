@@ -1,2 +1,7 @@
 Git is a version control system
 This is my first git library
+
+how to use git?
+step1: edit your file
+step2: use the command "git add test.txt"
+step3: use the command "git commit -m "your changed information"
