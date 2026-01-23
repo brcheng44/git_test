@@ -4,4 +4,6 @@ This is my first git library
 how to use git?
 step1: edit your file
 step2: use the command "git add test.txt"
-step3: use the command "git commit -m "your changed information"
+step3: use the command "git commit -m "your changed information""
+
+you can use the command "git status" to check if any file has been changed
