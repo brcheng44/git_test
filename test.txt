@@ -6,4 +6,5 @@ step1: edit your file
 step2: use the command "git add test.txt"
 step3: use the command "git commit -m "your changed information""
 
-you can use the command "git status" to check if any file has been changed
+you can use the command "git status" to check the state of the git library right now.
+if you didn't refresh the changed version in git library, you can use the command "git diff" to check the changed part
