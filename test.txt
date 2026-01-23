@@ -15,4 +15,4 @@ if you didn't refresh the changed version in git library, you can use the comman
             " --hard" back to the version has been commit
             " --soft" back to the version has not been commit
             " --mixed" back to the version has been add but not commit
-            
+" git reflog" can be used to move to the version after any history command.你可以使用这个命令回到任何命令执行之后的版本            
