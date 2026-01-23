@@ -8,3 +8,5 @@ step3: use the command "git commit -m "your changed information""
 
 you can use the command "git status" to check the state of the git library right now.
 if you didn't refresh the changed version in git library, you can use the command "git diff" to check the changed part
+
+"git log" is a command to check every version of the file and see what has been changed.
