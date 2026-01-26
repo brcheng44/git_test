@@ -24,3 +24,9 @@ use command "git remote add origin git@github.com:brcheng44/git_test.git" to con
 use command "git branch -M main" to create a new branch named main, "-M" means force rename.
 use command "git push -u origin main" to push your local repo to the remote repo. "-u" should be used if you push the repo first time.
 use command "git push origin main" to push your local repo to remote repo branch "main".
+
+"git branch -m master main" change the name of the branch "master" to "main"
+
+HOW to clone the remote repo:
+最好的方式是每次从远程库克隆一个repo，然后在本地修改完该库之后再push到remote上
+可以使用" git clone git@github.com:brcheng44/git_test.git" 克隆一个远程库到本地
