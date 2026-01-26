@@ -34,4 +34,11 @@ HOW to clone the remote repo:
 
 Branch Management
     main就是一个分支，提交指向的不是git库，而是 main 这个分支，也可以创建并提交至别的分支
-    合并分支就是
+    合并分支就是将master的指针移动到某个branch上
+    git checkout -b new_branch_name 等同于创建并且切换到新的分支，名字为 new_branch_name:{
+        git branch new_branch_name
+        git checkout new_branch_name
+    }
+    git branch 查看当前分支
+
+this is a test branch.
