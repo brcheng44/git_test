@@ -17,4 +17,4 @@ if you didn't refresh the changed version in git library, you can use the comman
             " --mixed" back to the version has been add but not commit
 " git reflog" can be used to move to the version after any history command.你可以使用这个命令回到任何命令执行之后的版本    
 
-"git checkout -- filename" is a command to restore the version from the work area.
+"git checkout -- filename" is a command to restore the version from the work area. (But when you have other change has no been commit, the delete file cannot be restore.)
