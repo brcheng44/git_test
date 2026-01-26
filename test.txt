@@ -18,3 +18,9 @@ if you didn't refresh the changed version in git library, you can use the comman
 " git reflog" can be used to move to the version after any history command.你可以使用这个命令回到任何命令执行之后的版本    
 
 "git checkout -- filename" is a command to restore the version from the work area. (But when you have other change has no been commit, the delete file cannot be restore.)
+
+STEPS to connect the local git repo to the remote repo
+use command "git remote add origin git@github.com:brcheng44/git_test.git" to connect to the remote repo, change the name of the repo you are using.
+use command "git branch -M main" to create a new branch named main, "-M" means force rename.
+use command "git push -u origin main" to push your local repo to the remote repo. "-u" should be used if you push the repo first time.
+use command "git push origin main" to push your local repo to remote repo branch "main".
