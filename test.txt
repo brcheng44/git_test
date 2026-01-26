@@ -2,9 +2,9 @@ Git is a version control system
 This is my first git library
 
 how to use git?
-step1: edit your file
-step2: use the command "git add test.txt"
-step3: use the command "git commit -m "your changed information""
+    step1: edit your file
+    step2: use the command "git add test.txt"
+    step3: use the command "git commit -m "your changed information""
 
 you can use the command "git status" to check the state of the git library right now.
 if you didn't refresh the changed version in git library, you can use the command "git diff" to check the changed part
@@ -20,13 +20,18 @@ if you didn't refresh the changed version in git library, you can use the comman
 "git checkout -- filename" is a command to restore the version from the work area. (But when you have other change has no been commit, the delete file cannot be restore.)
 
 STEPS to connect the local git repo to the remote repo
-use command "git remote add origin git@github.com:brcheng44/git_test.git" to connect to the remote repo, change the name of the repo you are using.
-use command "git branch -M main" to create a new branch named main, "-M" means force rename.
-use command "git push -u origin main" to push your local repo to the remote repo. "-u" should be used if you push the repo first time.
-use command "git push origin main" to push your local repo to remote repo branch "main".
+    use command "git remote add origin git@github.com:brcheng44/git_test.git" to connect to the remote repo, change the name of the repo you are using.
+    use command "git branch -M main" to create a new branch named main, "-M" means force rename.
+    use command "git push -u origin main" to push your local repo to the remote repo. "-u" should be used if you push the repo first time.
+    use command "git push origin main" to push your local repo to remote repo branch "main".
 
 "git branch -m master main" change the name of the branch "master" to "main"
 
 HOW to clone the remote repo:
-最好的方式是每次从远程库克隆一个repo，然后在本地修改完该库之后再push到remote上
-可以使用" git clone git@github.com:brcheng44/git_test.git" 克隆一个远程库到本地
+    最好的方式是每次从远程库克隆一个repo，然后在本地修改完该库之后再push到remote上
+    可以使用" git clone git@github.com:brcheng44/git_test.git" 克隆一个远程库到本地
+
+
+Branch Management
+    main就是一个分支，提交指向的不是git库，而是 main 这个分支，也可以创建并提交至别的分支
+    合并分支就是
