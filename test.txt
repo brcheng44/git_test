@@ -49,7 +49,4 @@ Branch Management
     使用 git branch -d <branch_name> 删除分支，如果是没有合并的branch，则需要改为-D选项
 
 
-this is a test branch.
-
-this is a test branch2.
-
+this is the main branch.
