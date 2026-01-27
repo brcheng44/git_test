@@ -45,3 +45,4 @@ Branch Management
     合并后原有分支仍然会保留
 
 git is a free software.
+new line.
