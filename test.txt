@@ -28,9 +28,17 @@ STEPS to connect the local git repo to the remote repo
 "git branch -m master main" change the name of the branch "master" to "main"
 
 HOW to clone the remote repo:
+    使用 "git remote -v" 查看远程库的信息
     最好的方式是每次从远程库克隆一个repo，然后在本地修改完该库之后再push到remote上
     可以使用" git clone git@github.com:brcheng44/git_test.git" 克隆一个远程库到本地
-
+    默认情况下，git clone 复制出来的远程 repo 只有 main 一个分支，如果要在其他分支上开发，就需要创建远程origin的branch到本地
+    需要在本地创建新的分支：git checkout -b branch1 origin/branch1
+    然后在本地的 branch 上修改，随后 push 到 remote: git push origin branch1
+    如果有人和你在向相同的分支上 push 并且发生了冲突，则可以重新 git pull 之后再在本地修改完 push
+    如果pull失败，可能是本地分支 branch1和远程分支origin/branch1 之间没有建立链接（no tracking information），则使用该设置：
+        git branch --set-upstream-to=origin/branch1 branch1
+        例如：[brcheng@brchengdeMacBook-Air learngit % git branch --set-upstream-to=origin/new_branch new_branch
+        分支 'new_branch' 设置为跟踪 'origin/new_branch'。]
 
 Branch Management
     main就是一个分支，提交指向的不是git库，而是 main 这个分支，也可以创建并提交至别的分支
