@@ -44,9 +44,14 @@ Branch Management
     当分支完成后需要与main进行合并时，切换至 main分支，随后使用 git merge new_branch_name进行合并
     合并后原有分支仍然会保留
 
-<<<<<<< HEAD
-git is a free software.
-=======
-git is a free software.
-new line.
->>>>>>> b1
+Fix Bug
+    当bug出现在main上时，branch1上有未提交的工作，此时需要：
+    step1: git stash [保存branch1当前的工作状态]
+    step2: git switch main [转到main上]
+    step3: git switch -c bug_fix [创建新的分支修复bug，并且提交]
+    step4: git switch main
+            git merge bug_fix [转回main，并且合并修复bug的分支]
+    step5: git switch branch1
+            git cherry-pick 290e645 [转到branch1，并且从main复制一份更改内容]
+    step6: git stash pop [恢复之前保存的工作状态，但是此时会发生冲突，选择保留两者的内容，然后手动更改branch1上的内容]
+    step7: 继续branch1 的工作内容
