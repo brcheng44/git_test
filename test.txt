@@ -44,6 +44,4 @@ Branch Management
     当分支完成后需要与main进行合并时，切换至 main分支，随后使用 git merge new_branch_name进行合并
     合并后原有分支仍然会保留
 
-
-this is a test branch.
-
+git is a free soft.
