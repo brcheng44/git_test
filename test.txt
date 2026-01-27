@@ -43,6 +43,7 @@ Branch Management
     切换分支之后添加（add）和提交（commit）都会发生在当前分支
     当分支完成后需要与main进行合并时，切换至 main分支，随后使用 git merge new_branch_name进行合并
     合并后原有分支仍然会保留
+    git branch -d <branch_name> 用于删除分支，未合并的分支需要用 -D 参数强制删除
 
 Fix Bug
     当bug出现在main上时，branch1上有未提交的工作，此时需要：
