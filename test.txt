@@ -83,3 +83,10 @@ Tag:
         删除本地的 tag，然后再使用
             git push origin :refs/tags/<tag_name>
         删除远程库中的 tag
+
+github使用教程
+    开源库先点击fork克隆到自己的账号下，然后再 git clone 到本地，修改后再推送到自己的库
+    如果需要别人接受自己的修改内容，需要点击 pull request
+
+git自定义
+    
