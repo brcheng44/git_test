@@ -74,3 +74,12 @@ Tag:
     git tag -a v1.0 -m "content" 可以创建带有说明文字的标签
     git show <tag_name> 可以查看某个 tag 对应的内容或者 commit
     tag与commit绑定，如果 main 和 branch上都有某个commit，那么tag会同时出现在两个分支上
+
+    推送 tag 至 remote
+        git push origin <tag_name> 推送某个 <tag_name> 至远程库
+        git push origin --tags 推送所有本地的 tag 至远程库
+        如果已经推送到远程库，删除时先用
+            git tag -d <tag_name>
+        删除本地的 tag，然后再使用
+            git push origin :refs/tags/<tag_name>
+        删除远程库中的 tag
