@@ -89,4 +89,7 @@ github使用教程
     如果需要别人接受自己的修改内容，需要点击 pull request
 
 git自定义
-    
+    alias configuration
+        git config --global alias.st status 使用该命令使得 st 成为 status 的代表
+    git config --global 对当前用户的所有git库生效，没有 --global则对当前库生效
+    当前配置放在隐藏文件 .gitconfig 中，可以直接修改文件修改配置
