@@ -67,6 +67,10 @@ Fix Bug
     step6: git stash pop [恢复之前保存的工作状态，但是此时会发生冲突，选择保留两者的内容，然后手动更改branch1上的内容]
     step7: 继续branch1 的工作内容
 
-new content:
-
-#tag
+Tag:
+    git tag v1.0 可以给commit 打标签，默认打在当前 branch 的最新 commit 上
+    git tag v1.0 <commit> 可以给特定的 commit 打标签
+    git tag -d <tag_name> 可以删除标签
+    git tag -a v1.0 -m "content" 可以创建带有说明文字的标签
+    git show <tag_name> 可以查看某个 tag 对应的内容或者 commit
+    tag与commit绑定，如果 main 和 branch上都有某个commit，那么tag会同时出现在两个分支上
