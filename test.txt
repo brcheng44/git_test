@@ -49,8 +49,11 @@ Branch Management
     }
     git branch 查看当前分支
     切换分支之后添加（add）和提交（commit）都会发生在当前分支
-    当分支完成后需要与main进行合并时，切换至 main分支，随后使用 git merge new_branch_name进行合并
+    当分支完成后需要与main进行合并时，切换至 main分支
+
+    git merge new_branch_name进行合并
     合并后原有分支仍然会保留
+<<<<<<< HEAD
     git branch -d <branch_name> 用于删除分支，未合并的分支需要用 -D 参数强制删除
 
 Fix Bug
@@ -64,3 +67,10 @@ Fix Bug
             git cherry-pick 290e645 [转到branch1，并且从main复制一份更改内容]
     step6: git stash pop [恢复之前保存的工作状态，但是此时会发生冲突，选择保留两者的内容，然后手动更改branch1上的内容]
     step7: 继续branch1 的工作内容
+=======
+    
+    使用 git branch -d <branch_name> 删除分支，如果是没有合并的branch，则需要改为-D选项
+
+
+this is the main branch.
+>>>>>>> 0cdf6ae761a93738435188ad81c8bd92f316391e
