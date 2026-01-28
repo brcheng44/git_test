@@ -66,3 +66,5 @@ Fix Bug
             git cherry-pick 290e645 [转到branch1，并且从main复制一份更改内容]
     step6: git stash pop [恢复之前保存的工作状态，但是此时会发生冲突，选择保留两者的内容，然后手动更改branch1上的内容]
     step7: 继续branch1 的工作内容
+
+new content:
